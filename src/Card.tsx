@@ -27,16 +27,10 @@ const Card: React.FC<CardProps> = ({
     Linking.openURL(`tel:${phoneNumber}`); //Aca es donde se define la funcion de LinKing que es una liberia de React-Native para poder interactuar con enlaces de aplicaciones entrantes y salientes 
   };
   return (
-    <TouchableOpacity style={styles.cardInfo} onPress={handlePress}>
-      {' '}
-      {/* Aca se llama al evento TouchableOpacity como padre para que este sea el padre en todas las tarjetas que se estan implementando */}
+    <TouchableOpacity style={styles.cardInfo} onPress={handlePress}> 
       <ScrollView style={styles.cardInfo}>
-        {' '}
-        {/*En este evento se debe dejar al igual que el padre debido a que es el que nos permite porder dar el eventro scroll para deslizar las tarjetas */}
-        <Image style={styles.cardImage} source={imageSource} />{' '}
-        {/*esto como es evidente es para las imagenes de las tarjetas */}
-        <Text style={styles.cardTitle}>{cardTitle}</Text>{' '}
-        {/*de igual manera que el apartado de las imagenes tanto esta liena 34 como la 35 son quienes contienen el titulo de las tarjetas y el texto mismo */}
+        <Image style={styles.cardImage} source={imageSource} />
+        <Text style={styles.cardTitle}>{cardTitle}</Text>
         <Text style={styles.cardText}>{cardText}</Text>
       </ScrollView>
     </TouchableOpacity>
