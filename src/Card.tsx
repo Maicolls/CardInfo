@@ -37,6 +37,8 @@ const Card: React.FC<CardProps> = ({
   );
 };
 
+
+export default Card;
 //este son los estilos quqe se le dan a las distintas tarjetas 
 const styles = StyleSheet.create({
   cardInfo: {
@@ -64,4 +66,3 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Card;
